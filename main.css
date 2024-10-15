@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #014E56;
+}
+.container{
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header{
+    padding-top: 73px;
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__link{
+    color: #ffffff;
+    font-family: "Livvic";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-decoration: none;
+}
+.header__list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+.header__btn{
+    width: 153px;
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 24px;
+    padding: 10px 0;
+    background-color: transparent;
+    color: white;
+}
+.header__burger{
+    display: none;
+}
+@media (max-width:500px){
+    .header__burger{
+        display: block;
+    }
+    .header__list{
+        display: none;
+    }
+}
